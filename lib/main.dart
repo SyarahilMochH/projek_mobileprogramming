@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'pages/profile_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -15,7 +15,6 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool _isDarkMode = false;
-
 
   void toggleTheme() {
     setState(() {

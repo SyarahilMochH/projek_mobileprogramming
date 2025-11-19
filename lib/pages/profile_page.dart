@@ -44,14 +44,14 @@ class ProfilePage extends StatelessWidget {
             child: Stack(
               alignment: Alignment.bottomRight,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 60,
                   backgroundImage: AssetImage("assets/profile.jpg"),
                 ),
                 Container(
                   padding: const EdgeInsets.all(6),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary,
+                    color: Colors.green,
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(Icons.check, color: Colors.white),
@@ -80,6 +80,8 @@ class ProfilePage extends StatelessWidget {
           InfoCard(icon: Icons.email, text: "Email: ${profile.email}"),
           InfoCard(icon: Icons.phone, text: "Telepon: ${profile.telepon}"),
           const SizedBox(height: 16),
+
+          // HOBI
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Text("Hobi", style: Theme.of(context).textTheme.titleLarge),
@@ -89,11 +91,13 @@ class ProfilePage extends StatelessWidget {
             runSpacing: 4,
             children: profile.hobi.map((h) => HobbyItem(hobby: h)).toList(),
           ),
+
           const SizedBox(height: 16),
+
+          // SKILL
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child:
-                Text("Skill", style: Theme.of(context).textTheme.titleLarge),
+            child: Text("Skill", style: Theme.of(context).textTheme.titleLarge),
           ),
           GridView.builder(
             shrinkWrap: true,
@@ -107,6 +111,7 @@ class ProfilePage extends StatelessWidget {
               return SkillItem(skill: profile.skill[index]);
             },
           ),
+
           const SizedBox(height: 20),
         ],
       ),
