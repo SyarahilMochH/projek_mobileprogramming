@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'pages/profile_page.dart';
+import 'pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +38,10 @@ class _MyAppState extends State<MyApp> {
         textTheme: GoogleFonts.poppinsTextTheme(ThemeData.dark().textTheme),
       ),
       themeMode: _isDarkMode ? ThemeMode.dark : ThemeMode.light,
-      home: ProfilePage(onThemeToggle: toggleTheme, isDarkMode: _isDarkMode),
+      home: HomePage(
+        onThemeToggle: toggleTheme,
+        isDarkMode: _isDarkMode,
+      ),
     );
   }
 }

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/profile.dart';
 import '../widgets/info_card.dart';
-import '../widgets/hobby_item.dart';
-import '../widgets/skill_item.dart';
 
 class ProfilePage extends StatelessWidget {
   final VoidCallback onThemeToggle;
@@ -37,9 +35,13 @@ class ProfilePage extends StatelessWidget {
           ),
         ],
       ),
+
       body: ListView(
+        padding: const EdgeInsets.all(16),
         children: [
           const SizedBox(height: 20),
+
+          // FOTO PROFIL
           Center(
             child: Stack(
               alignment: Alignment.bottomRight,
@@ -51,7 +53,7 @@ class ProfilePage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(6),
                   decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: Theme.of(context).colorScheme.primary,
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(Icons.check, color: Colors.white),
@@ -60,6 +62,8 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
+
+          // NAMA + JURUSAN + STATUS
           Center(
             child: Column(
               children: [
@@ -75,44 +79,25 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
+
+          const SizedBox(height: 30),
+
+          // INFORMASI DETAIL
+          InfoCard(icon: Icons.school, text: "NIM : ${profile.nim}"),
+          InfoCard(icon: Icons.email, text: "Email : ${profile.email}"),
+          InfoCard(icon: Icons.phone, text: "Telepon : ${profile.telepon}"),
+
           const SizedBox(height: 20),
-          InfoCard(icon: Icons.school, text: "NIM: ${profile.nim}"),
-          InfoCard(icon: Icons.email, text: "Email: ${profile.email}"),
-          InfoCard(icon: Icons.phone, text: "Telepon: ${profile.telepon}"),
-          const SizedBox(height: 16),
 
-          // HOBI
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text("Hobi", style: Theme.of(context).textTheme.titleLarge),
-          ),
-          Wrap(
-            spacing: 8,
-            runSpacing: 4,
-            children: profile.hobi.map((h) => HobbyItem(hobby: h)).toList(),
-          ),
-
-          const SizedBox(height: 16),
-
-          // SKILL
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
-            child: Text("Skill", style: Theme.of(context).textTheme.titleLarge),
-          ),
-          GridView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 3,
+          // Informasi tambahan atau catatan
+          Text(
+            "Gunakan menu di bawah untuk melihat daftar Hobi dan Skill.",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 14,
+              color: Theme.of(context).colorScheme.primary,
             ),
-            itemCount: profile.skill.length,
-            itemBuilder: (context, index) {
-              return SkillItem(skill: profile.skill[index]);
-            },
           ),
-
-          const SizedBox(height: 20),
         ],
       ),
     );

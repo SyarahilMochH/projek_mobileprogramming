@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import '../pages/detail_page.dart';
 
 class SkillItem extends StatelessWidget {
   final String skill;
-  const SkillItem({super.key, required this.skill});
+  final Function(String) onClick;
+
+  const SkillItem({
+    super.key,
+    required this.skill,
+    required this.onClick,
+  });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) => DetailPage(title: skill, type: "Skill"),
-          ),
-        );
+        onClick(skill);   // ⬅ memanggil fungsi ke SkillPage
       },
       child: Card(
         margin: const EdgeInsets.all(6),
@@ -24,7 +24,10 @@ class SkillItem extends StatelessWidget {
           child: Center(
             child: Text(
               skill,
-              style: const TextStyle(fontWeight: FontWeight.w600),
+              style: const TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 16,
+              ),
             ),
           ),
         ),

@@ -1,0 +1,34 @@
+{
+  "hobi": {
+    "Coding": {
+      "image": "assets/images/coding.jpg",
+      "deskripsi": "Coding adalah proses menulis, membaca, dan mengelola kode program untuk membangun aplikasi, website, game, dan sistem digital lainnya. Kegiatan ini melibatkan kemampuan analisis, algoritma, debugging, dan pemecahan masalah. Coding juga melatih logika, kesabaran, dan kreativitas. Dengan coding, seseorang dapat menciptakan solusi digital seperti aplikasi mobile, sistem kecerdasan buatan, dan berbagai teknologi masa depan."
+    },
+    "Gaming": {
+      "image": "assets/images/gaming.jpg",
+      "deskripsi": "Gaming adalah aktivitas bermain permainan digital yang dapat memberikan hiburan, relaksasi, dan pelatihan kognitif. Melalui gaming, pemain dapat mengembangkan kemampuan strategi, refleks cepat, kerja sama tim, hingga kreativitas. Industri game berkembang pesat dengan berbagai genre seperti RPG, MOBA, FPS, hingga simulasi. Gaming bahkan dapat menjadi profesi melalui eSports."
+    },
+    "Mendengarkan Musik": {
+      "image": "assets/images/music.jpg",
+      "deskripsi": "Mendengarkan musik membantu memperbaiki suasana hati, meningkatkan fokus, dan memberikan relaksasi mental. Musik memiliki kekuatan emosional yang dapat menenangkan, memotivasi, atau menginspirasi pendengarnya. Berbagai genre musik seperti pop, jazz, klasik, rock, dan lo-fi dapat memberikan pengalaman berbeda bagi setiap pendengar."
+    }
+  },
+  "skill": {
+    "Flutter": {
+      "image": "assets/images/flutter.png",
+      "deskripsi": "Flutter adalah framework UI modern dari Google yang digunakan untuk membangun aplikasi multiplatform seperti Android, iOS, Web, dan Desktop hanya dengan satu codebase. Flutter terkenal dengan performanya yang cepat, fitur hot reload, dan kumpulan widget yang fleksibel. Banyak perusahaan besar mengadopsi Flutter karena efisiensi dan kualitas tampilannya yang tinggi."
+    },
+    "Kotlin": {
+      "image": "assets/images/kotlin.jpg",
+      "deskripsi": "Kotlin adalah bahasa pemrograman modern untuk Android yang dikembangkan oleh JetBrains. Bahasa ini menawarkan sintaks yang ringkas, mudah dibaca, aman dari kesalahan null pointer, dan kompatibel 100% dengan Java. Kotlin mendukung fitur mutakhir seperti coroutine, extension function, dan lambda expression."
+    },
+    "UI/UX Design": {
+      "image": "assets/images/uiux.jpg",
+      "deskripsi": "UI/UX Design berfokus pada bagaimana aplikasi terlihat dan bagaimana pengguna berinteraksi dengan aplikasi tersebut. UI (User Interface) berhubungan dengan desain visual seperti warna, layout, ikon, dan tipografi. UX (User Experience) berkaitan dengan pengalaman pengguna mencakup kenyamanan navigasi, kemudahan penggunaan, dan kejelasan alur. UI/UX sangat penting agar aplikasi tidak hanya indah, tetapi juga mudah digunakan."
+    },
+    "Firebase": {
+      "image": "assets/images/firebase.png",
+      "deskripsi": "Firebase adalah platform backend dari Google yang mempermudah developer dalam membangun aplikasi modern tanpa harus mengelola server sendiri. Firebase menyediakan layanan seperti Authentication, Firestore Database, Storage, Crashlytics, Analytics, dan Cloud Functions. Firebase sangat cocok untuk aplikasi mobile karena integrasinya yang cepat dan skalabilitas tinggi."
+    }
+  }
+}

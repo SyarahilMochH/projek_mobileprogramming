@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 enum StatusMahasiswa { aktif, cuti, lulus }
 
 class Profile {
@@ -21,6 +23,7 @@ class Profile {
     required this.status,
   });
 
+  /// Mengubah enum menjadi teks untuk UI
   String get statusText {
     switch (status) {
       case StatusMahasiswa.aktif:
@@ -29,6 +32,8 @@ class Profile {
         return "Cuti";
       case StatusMahasiswa.lulus:
         return "Lulus";
+      default:
+        return "-";
     }
   }
 }
