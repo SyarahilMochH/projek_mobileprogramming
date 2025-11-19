@@ -1,16 +1,62 @@
-# projek_mobileprogramming
 
-A new Flutter project.
 
-## Getting Started
+<img width="488" height="927" alt="image" src="https://github.com/user-attachments/assets/c43e46cb-349f-48eb-9408-cac2971cc3c4" />
 
-This project is a starting point for a Flutter application.
+Proyek ini dibuat sebagai tugas Ujian Tengah Semester (UTS) untuk mata kuliah Pemrograman Mobile 2 – Universitas Teknologi Bandung.
+Aplikasi ini menampilkan profil pribadi mahasiswa dalam bentuk Single Page Application menggunakan Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+✨ Fitur Aplikasi
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Menampilkan data profil mahasiswa:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Foto
+
+Nama lengkap
+
+NIM
+
+Jurusan
+
+Email
+
+Nomor Telepon
+
+Status Mahasiswa
+
+Menampilkan daftar Hobi dan Skill secara interaktif
+
+Klik Hobi / Skill → masuk ke halaman detail
+
+Dark Mode / Light Mode menggunakan setState()
+
+UI responsive & modern menggunakan Google Fonts
+
+Menggunakan arsitektur folder rapi:
+
+🛠️ Teknologi yang Digunakan
+
+Flutter
+
+Dart
+
+Google Fonts
+
+Material Design
+
+Widget:
+
+Stack, Column, Row
+
+Card, Chip
+
+ListView, GridView
+
+Custom Widgets
+
+👤 Data Mahasiswa
+
+Aplikasi ini dibuat berdasarkan data:
+
+Nama: Syarahil Moch H.
+NIM: 23552011006
+Jurusan: Teknik Informatika
